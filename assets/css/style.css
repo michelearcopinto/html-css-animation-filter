@@ -139,20 +139,6 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation-name: top;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-@keyframes top {
-    from {
-        left: 10%;
-    }
-
-    to {
-        left: 60%;
-    }
 }
 
 .ex-12-bottom-white,
@@ -163,10 +149,10 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation-name: bottom;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+}
+
+.ex-12-bottom-white {
+    animation: bottom 1s infinite alternate;
 }
 
 @keyframes bottom {
@@ -179,21 +165,98 @@
     }
 }
 
-.ex-13-button .ex-13-top-white {
-    animation-name: test_05;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.ex-12-top-white {
+    animation: top 1s infinite alternate;
 }
 
-@keyframes side {
+@keyframes top {
     from {
-        right: 10%;
+        left: 10%;
     }
 
     to {
-        right: 60%;
+        left: 60%;
     }
 }
 
-.ex-13-button .ex-13-bottom-white {}
+.ex-13-bottom-white {
+    animation: bottom13 5s infinite;
+}
+
+@keyframes bottom13 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20% {
+        bottom: -10px;
+        right: 80%;
+    }
+
+    40% {
+        bottom: 60px;
+        right: 72%;
+    }
+
+    60% {
+        bottom: 60px;
+        right: -5%;
+    }
+
+    80% {
+        bottom: -10px;
+        right: -5%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+.ex-13-top-white {
+    animation: top13 5s infinite;
+}
+
+@keyframes top13 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    20% {
+        top: -10px;
+        left: 72%;
+    }
+
+    40% {
+        top: 60px;
+        left: 72%;
+    }
+
+    60% {
+        top: 60px;
+        left: -5%;
+    }
+
+    80% {
+        top: -10px;
+        left: -5%;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+top: -10px;
+left: 10%;
